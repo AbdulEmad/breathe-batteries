@@ -8,7 +8,7 @@ class PM25Processor:
     def __init__(self, device_name, threshold):
         self.device_name = device_name
         self.threshold = threshold
-        self.csv_file = f'{device_name}_pm25_threshold_{threshold}.csv'
+        self.csv_file = f'{device_name}_pm25.csv'
 
     def read_csv(self):
         if not os.path.exists(self.csv_file):
